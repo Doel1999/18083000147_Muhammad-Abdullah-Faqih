@@ -92,36 +92,61 @@ include "session.php";
 								<input class="form-control" placeholder="Nomor Polisi" name="nomor_polisi" type="text" autofocus="">
 							</div>
 							<div class="form-group">
+										<label>Warna TNKB</label>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="warna_tnkb" id="warna_tnkb" value="Merah">Merah
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+											<input type="checkbox" name="warna_tnkb" id="warna_tnkb" value="Putih">Putih
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+											<input type="checkbox" name="warna_tnkb" id="warna_tnkb" value="Hitam">Hitam
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+											<input type="checkbox" name="warna_tnkb" id="warna_tnkb" value="Kuning">Kuning
+											</label>
+										</div>
+							<div class="form-group">
 								<input class="form-control" placeholder="No Rangka" name="nomor_rangka" type="text" value="">
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="No Mesin" name="nomor_mesin" type="none" value="">
-								<td>
-								<textarea type="text" name="nomor_mesin">
-								</textarea>
-								</td>
+								<label>No Mesin</label>
+									<textarea class="form-control" name="nomer_mesin" id="nomer_mesin" rows="3"></textarea>
 							</div>
 							<div class="form-group">
+								<label>Tanggal Perolehan</label>
 								<input class="form-control" placeholder="Tanggal Perolehan" name="tanggal_perolehan" type="date" value="">
 							</div>
-							<div class="">
-								<input class="form-control" placeholder="OPD Pengguna" name="opd_pengguna" type="" value="">
-								<td>
-									<input type="radio" name="opd_pengguna" value="Kementrian"> Kementrian
-									<input type="radio" name="opd_pengguna" value="Kedinasan"> Kedinasan <br>
-								</td>
+							<div class="form-group">
+							<label>OPD Pengguna</label>
+								<div class="radio">
+									<label>
+										<input type="radio" name="opd_pengguna" id="opd_pengguna" value="Dinas Perhutanan" checked>Dinas Perhutanan
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="opd_pengguna" id="opd_pengguna" value="Dinas Perikanan" checked>Dinas Perikanan
+									</label>
+								</div>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Jabatan Pengguna" name="jabatan_pengguna" type="" value="">
-								<select name="jabatan_pengguna" id="jabatan_pengguna" width="1500">
-													<?php
+								<label>Jabatan Pengguna</label>
+										<select class="form-control" name="jabatan_pengguna" id="jabatan_pengguna">
+										<?php
 														include "koneksi.php";
 															//$query="SELECT id_jabatan,Jabatan from jabatan order by id_jabatan";
 															$sql=mysqli_query($koneksi,"SELECT id_jabatan,Jabatan From jabatan order by id_jabatan");
 															While ($kolom=mysqli_fetch_array($sql))
-															{echo "<option value='$kolom[Jabatan]'>$kolom[Jabatan]</option>";}
-													?>								
-								</select>
+															{echo "<option value='$kolom[Jabatan]'>$kolom[Jabatan]</option>";} ?>
+										</select>
 							</div>
 							<div class="form-group">
 								<input class="form-control" placeholder="Nama Pengguna" name="nama_pengguna" type="text" value="">

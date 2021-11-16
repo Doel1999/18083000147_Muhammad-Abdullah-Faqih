@@ -89,7 +89,8 @@ include "session.php";
 						    <tr>
 						        <th data-align="right">No</th>
 						        <th >OPD Pengguna</th>
-						        <th >Nomor Polisi</th>
+								<th >Nomor Polisi</th>
+								<th >Warna TNKB</th>
 						        <th >Nomor Rangka</th>
 								<th >Nomor Mesin</th>
 								<th >Tanggal Perolehan</th>
@@ -106,13 +107,14 @@ include "session.php";
   							?>
   							<tr>
   								<td><?php echo $no++; ?></td>
-   								<td><?php echo "$kolom[4]"; ?></td>
+   								<td><?php echo "$kolom[5]"; ?></td>
     							<td><?php echo "$kolom[0]"; ?></td>
     							<td><?php echo "$kolom[1]"; ?></td>
     							<td><?php echo "$kolom[2]"; ?></td>
     							<td><?php echo "$kolom[3]"; ?></td>
-    							<td><?php echo "$kolom[5]"; ?></td>
-    							<td><?php echo "$kolom[6]"; ?></td>
+    							<td><?php echo "$kolom[4]"; ?></td>
+								<td><?php echo "$kolom[6]"; ?></td>
+								<td><?php echo "$kolom[7]"; ?></td>
     							<td><?php echo "<a href='formupdate.php?id=$kolom[0]'>UPDATE</a> | <a href='delete.php?id=$kolom[0]'>DELETE</a>";?></td>
   							</tr>
   							<?php

@@ -88,25 +88,28 @@ include "session.php";
 					<form role="form">
 						<fieldset>
 							<div class="form-group">
-								<label>OPD Pengguna</label><input class="form-control" placeholder="OPD Pengguna" name="opd_pengguna" type="text" value="<?php echo "$kolom[4]"; ?>">
+								<label>OPD Pengguna</label><input class="form-control" placeholder="OPD Pengguna" name="opd_pengguna" type="text" value="<?php echo "$kolom[5]"; ?>">
 							</div>
 							<div class="form-group">
 								<label>Nomor Polisi</label><input class="form-control" placeholder="Nomor Polisi" name="nomor_polisi" type="text" value="<?php echo "$kolom[0]"; ?>" readonly="true">
 							</div>
 							<div class="form-group">
-								<label>Nomor Rangka</label><input class="form-control" placeholder="Nomor Rangka" name="nomor_rangka" type="text" value="<?php echo "$kolom[1]"; ?>">
+								<label>Warna TNKB</label><input class="form-control" placeholder="Warna TNKB" name="warna_tnkb" type="text" value="<?php echo "$kolom[1]"; ?>" >
 							</div>
 							<div class="form-group">
-								<label>Nomor Mesin</label><input class="form-control" placeholder="Nomor Mesin" name="nomor_mesin" type="text" value="<?php echo "$kolom[2]"; ?>">
+								<label>Nomor Rangka</label><input class="form-control" placeholder="Nomor Rangka" name="nomor_rangka" type="text" value="<?php echo "$kolom[2]"; ?>">
 							</div>
 							<div class="form-group">
-								<label>Tanggal Perolehan</label><input class="form-control" placeholder="Tanggal Perolehan" name="tanggal_perolehan" type="date" value="<?php echo "$kolom[3]"; ?>">
+								<label>Nomor Mesin</label><input class="form-control" placeholder="Nomor Mesin" name="nomor_mesin" type="text" value="<?php echo "$kolom[3]"; ?>">
 							</div>
 							<div class="form-group">
-								<label>Jabatan Pengguna</label><input class="form-control" placeholder="Jabatan Pengguna" name="jabatan_pengguna" type="text"value="<?php echo "$kolom[5]"; ?>">
+								<label>Tanggal Perolehan</label><input class="form-control" placeholder="Tanggal Perolehan" name="tanggal_perolehan" type="date" value="<?php echo "$kolom[4]"; ?>">
 							</div>
 							<div class="form-group">
-								<label>Nama Pengguna</label><input class="form-control" placeholder="Nama Pengguna" name="nama_pengguna" type="text" value="<?php echo "$kolom[6]"; ?>">
+								<label>Jabatan Pengguna</label><input class="form-control" placeholder="Jabatan Pengguna" name="jabatan_pengguna" type="text"value="<?php echo "$kolom[6]"; ?>">
+							</div>
+							<div class="form-group">
+								<label>Nama Pengguna</label><input class="form-control" placeholder="Nama Pengguna" name="nama_pengguna" type="text" value="<?php echo "$kolom[7]"; ?>">
 							</div>
 
 							<div>
