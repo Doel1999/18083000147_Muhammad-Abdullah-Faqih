@@ -142,7 +142,6 @@ include "session.php";
 										<select class="form-control" name="jabatan_pengguna" id="jabatan_pengguna">
 										<?php
 														include "koneksi.php";
-															//$query="SELECT id_jabatan,Jabatan from jabatan order by id_jabatan";
 															$sql=mysqli_query($koneksi,"SELECT id_jabatan,Jabatan From jabatan order by id_jabatan");
 															While ($kolom=mysqli_fetch_array($sql))
 															{echo "<option value='$kolom[Jabatan]'>$kolom[Jabatan]</option>";} ?>
