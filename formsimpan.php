@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <?php
 include "koneksi.php";
-//$query="SELECT id_jabatan,Jabatan from jabatan order by id_jabatan";
+
 $sql=mysqli_query($koneksi,"SELECT * from Jabatan");
 While ($kolom=mysqli_fetch_array($sql))
 	{echo "<option value='$kolom[id_jabatan]'>$kolom[Jabatan]</option>";}
